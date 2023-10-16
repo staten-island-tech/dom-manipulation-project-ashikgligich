@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(75, 75, 100);
+    font-size: 5vh;
+    font-family: "Open Sans", sans-serif;
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    background-image: url(Untitled\ presentation.png);
+    background-size: cover;
+    height: 100vh;
+  }
+  .top-bar {
+    padding-left: 2vw;
+    padding-top: 1vw;
+    width: 98vw;
+    background-color: rgb(50, 50, 75);
+  }
+  .top-bar img {
+    height: 5vh;
+    width: 5vh;
+  }
+  .flex-container {
+    padding-top: 10vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .flex-container img {
+    width: 20vw;
+  }
