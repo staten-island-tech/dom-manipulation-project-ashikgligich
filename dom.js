@@ -1,5 +1,5 @@
 const DOSelectors = {
-  form: document.querySelector("#form"),
+  form: document.querySelector("form"),
   firstName: document.querySelector(".first-name"),
   h2s: document.querySelectorAll("h2"),
 };
