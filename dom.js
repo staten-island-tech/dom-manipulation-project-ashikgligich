@@ -1,23 +1,32 @@
 const DOMSelectors = {
-  form: document.querySelector("form"),
+  form: document.getElementById("form"),
   firstName: document.querySelector(".first-name"),
-  h2s: document.querySelectorAll("h6"),
-
-  form: document.querySelector("form1"),
-  Title: document.querySelector(".card-title"),
-  h2s: document.querySelectorAll("h2"),
+  cardTitle: document.querySelector(".card-title"),
+  cardData: document.querySelector(".card-data"),
+  cardPicture: document.querySelector(".card-picture"),
+  h2: document.getElementById("myH2"),
+  h4: document.getElementById("myH4"),
+  h6: document.getElementById("myH6"),
+  img: document.getElementById("imgYes")
+  
 };
+
+console.log(DOMSelectors);
+
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log(DOMSelectors.firstName.value);
-  DOMSelectors.h6s.forEach((el) => {
-    el.textContent = DOMSelectors.firstName.value;
-  });
-    event.preventDefault();
-    console.log(DOMSelectors.Title.value);
-    DOMSelectors.h2s.forEach((el) => {
-      el.textContent = DOMSelectors.Title.value;
-  });
+  //alert("here");
+  //console.log(DOMSelectors.firstName.value);
+
+  DOMSelectors.h2.textContent = DOMSelectors.firstName.value;
+  DOMSelectors.h4.textContent = DOMSelectors.cardTitle.value;
+  DOMSelectors.h6.textContent = DOMSelectors.cardData.value;
+  DOMSelectors.img.textContent = DOMSelectors.cardPicture.value;
+
+  //DOMSelectors.h2s.forEach((el) => {
+  //  el.textContent = DOMSelectors.firstName.value;
+  //});
+    
 });
 
 function makeGalaxy(){
