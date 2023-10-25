@@ -11,7 +11,12 @@ const DOMSelectors = {
   
 };
 
+
+
+
 console.log(DOMSelectors);
+
+
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -29,6 +34,12 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     
 });
 
+
+
+
+
+
+
 function makeGalaxy(){
 
 
@@ -42,11 +53,11 @@ document
 `<div class="grow">
 <div id="animation1">
   <img
-    src="${DOMSelectors.Picture.value}"
+    src="${DOMSelectors.cardPicture.value}"
     alt="F44"
   />
-  <h2>${DOMSelectors.Title.value}</h2>
-  <h4>${DOMSelectors.Data.value}</h4>
+  <h2>${DOMSelectors.cardTitle.value}</h2>
+  <h4>${DOMSelectors.cardData.value}</h4>
   <h6>${DOMSelectors.firstName.value}</h6>
 </div>
 </div>`
