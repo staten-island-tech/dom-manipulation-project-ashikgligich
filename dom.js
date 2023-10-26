@@ -12,7 +12,15 @@ const DOMSelectors = {
 };
 
 
-
+const insert = document.querySelector("#insert");
+insert.addEventListener("click", () => {
+  const subject = document.querySelector("#subject");
+  const positionSelect = document.querySelector("#position");
+  subject.insertAdjacentHTML(
+    positionSelect.value,
+    " inserted text ",
+  );
+});
 
 console.log(DOMSelectors);
 
@@ -27,11 +35,17 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   DOMSelectors.h4.textContent = DOMSelectors.cardTitle.value;
   DOMSelectors.h6.textContent = DOMSelectors.cardData.value;
   DOMSelectors.img.textContent = DOMSelectors.cardPicture.value;
+  
 
   //DOMSelectors.h2s.forEach((el) => {
   //  el.textContent = DOMSelectors.firstName.value;
   //});
-    
+
+
+
+
+
+  
 });
 
 
