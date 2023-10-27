@@ -1,116 +1,114 @@
 body {
-    background-color: rgba(75, 75, 100);
-    font-size: 5vh;
-    font-family: "Open Sans", sans-serif;
-    margin: 0%;
-    font-family: Arial, sans-serif;
-    background-image: url(Untitled\ presentation.png);
-    background-size: cover;
-    height: 100vh;
-    color: aliceblue;
-  }
-  .top-bar {
-    padding-left: 2vw;
-    padding-top: 1vw;
-    width: 98vw;
-    background-color: rgb(50, 50, 75);
-  }
-  .top-bar img {
-    height: 5vh;
-    width: 5vh;
-  }
-  .flex-container {
-    padding-top: 20vh;
-    display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    text-align: center;
-    align-items: center;
-  }
+  background-color: rgba(75, 75, 100);
+  font-size: 5vh;
+  font-family: "Open Sans", sans-serif;
+  margin: 0%;
+  font-family: Arial, sans-serif;
+  background-image: url(Untitled\ presentation.png);
+  background-size: cover;
   
-  .flex-container img {
-    width: 20vw;
-  }
+  color: aliceblue;
+}
+.top-bar {
+  padding-left: 2vw;
+  padding-top: 1vw;
+  width: 98vw;
+  background-color: rgb(50, 50, 75);
+}
+.top-bar img {
+  height: 5vh;
+  width: 5vh;
+}
+.flex-container {
+  padding-top: 20vh;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+}
 
-  .grow {
-    background-color: gray;
-    display: flex;
-    padding: 1vw 1vw 1vw 1vw;
-    border-radius: 1vw;
-    height: 25vh;
-    transition: all 2s;
-    overflow: hidden;
-    transform-box: fill-box;
-    box-shadow: 1vw 1vh 1vw 1vh rgb(0, 0, 0, 0.5);
-  }
-  
-  .grow:hover {
-    height: 50vh;
-    position: relative;
-    z-index: 100;
-    transform: scale(1.25);
-  }
-  
-  .grow:hover div {
-    position: relative;
-    transition: transform 1.05s ease-in-out;
-  }
-  body h2{
-    display: block;
-    margin-block-start: 1vw;
-    margin-block-end: 1vw;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #06D85F;
-    margin: 80px 0;
-  }
+.flex-container img {
+  width: 20vw;
+}
 
+.grow {
+  background-color: gray;
+  display: flex;
+  padding: 1vw 1vw 1vw 1vw;
+  border-radius: 1vw;
+  height: 25vh;
+  transition: all 2s;
+  overflow: hidden;
+  transform-box: fill-box;
+  box-shadow: 1vw 1vh 1vw 1vh rgb(0, 0, 0, 0.5);
+}
 
+.grow:hover {
+  height: 50vh;
+  position: relative;
+  z-index: 100;
+  transform: scale(1.25);
+}
 
-  .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #00000000;
-    min-width: 200px;
-    z-index: 1;
-    margin-top: 20px;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    font-family: helvetica;
-    padding: 5px 5px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  hr.solid {
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid #000000;
-    border-bottom: none;
-  }
-  
-  .show {
-    display: block;
-  }
+.grow:hover div {
+  position: relative;
+  transition: transform 1.05s ease-in-out;
+}
+body h2 {
+  display: block;
+  margin-block-start: 1vw;
+  margin-block-end: 1vw;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #06d85f;
+  margin: 80px 0;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00000000;
+  min-width: 200px;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  font-family: helvetica;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+hr.solid {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #000000;
+  border-bottom: none;
+}
+
+.show {
+  display: block;
+}

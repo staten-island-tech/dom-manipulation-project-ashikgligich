@@ -7,24 +7,10 @@ const DOMSelectors = {
   h2: document.getElementById("myH2"),
   h4: document.getElementById("myH4"),
   h6: document.getElementById("myH6"),
-  img: document.getElementById("imgYes")
-  
+  img: document.getElementById("imgYes"),
 };
 
-
-const insert = document.querySelector("#insert");
-insert.addEventListener("click", () => {
-  const subject = document.querySelector("#subject");
-  const positionSelect = document.querySelector("#position");
-  subject.insertAdjacentHTML(
-    positionSelect.value,
-    " inserted text ",
-  );
-});
-
 console.log(DOMSelectors);
-
-
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -35,36 +21,15 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   DOMSelectors.h4.textContent = DOMSelectors.cardTitle.value;
   DOMSelectors.h6.textContent = DOMSelectors.cardData.value;
   DOMSelectors.img.textContent = DOMSelectors.cardPicture.value;
-  
 
   //DOMSelectors.h2s.forEach((el) => {
   //  el.textContent = DOMSelectors.firstName.value;
   //});
 
 
-
-
-
-  
-});
-
-
-
-
-
-
-
-function makeGalaxy(){
-
-
-}
-
-function addStar(Galaxy){
-document
-  .querySelector(".gallery")
-  .insertAdjacentHTML(
-"afterbegin",
-`<div class="grow">
+  document.querySelector(".flex-container").insertAdjacentHTML(
+    "afterbegin",
+    `<div class="grow">
 <div id="animation1">
   <img
     src="${DOMSelectors.cardPicture.value}"
@@ -76,25 +41,43 @@ document
 </div>
 </div>`
   );
+});
+
+/*function makeGalaxy() {
+const Galaxy = yes{}
+return Galaxy
 }
 
-
-
-
+function addStar(Galaxy) {
+  document.querySelector(".gallery").insertAdjacentHTML(
+    "afterbegin",
+    `<div class="grow">
+<div id="animation1">
+  <img
+    src="${DOMSelectors.cardPicture.value}"
+    alt="F44"
+  />
+  <h2>${DOMSelectors.cardTitle.value}</h2>
+  <h4>${DOMSelectors.cardData.value}</h4>
+  <h6>${DOMSelectors.firstName.value}</h6>
+</div>
+</div>`
+  );
+}*/
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
       }
     }
   }
-}
+};
