@@ -27,10 +27,13 @@ body {
   flex-flow: row wrap;
   text-align: center;
   align-items: center;
+  font-size: clamp(16px, 4vw, 22px);
+
 }
 
 .flex-container img {
-  width: 20vw;
+  width: 20vh;
+  margin: 1vw;
 }
 
 .grow {
@@ -43,6 +46,8 @@ body {
   overflow: hidden;
   transform-box: fill-box;
   box-shadow: 1vw 1vh 1vw 1vh rgb(0, 0, 0, 0.5);
+  line-height : 20px;
+  text-align: center;
 }
 
 .grow:hover {
@@ -68,8 +73,22 @@ body h2 {
 h1 {
   text-align: center;
   color: #06d85f;
-  margin: 80px 0;
+  margin-top: 80px;
 }
+h2 {
+  text-align: center;
+  
+}
+
+body h4 {
+  text-align: center;
+  max-width: 10ch;
+}
+
+h6 {
+  text-align: center;
+}
+
 
 .dropbtn {
   background-color: #04aa6d;

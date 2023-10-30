@@ -26,7 +26,6 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   //  el.textContent = DOMSelectors.firstName.value;
   //});
 
-
   document.querySelector(".flex-container").insertAdjacentHTML(
     "afterbegin",
     `<div class="grow">
