@@ -37,10 +37,18 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   <h2>${DOMSelectors.cardTitle.value}</h2>
   <h4>${DOMSelectors.cardData.value}</h4>
   <h6>${DOMSelectors.firstName.value}</h6>
+  <button type="button">Delete</button>
 </div>
 </div>`
   );
 });
+const button = document.querySelector('button');
+button.addEventListener('click', onButtonClick);
+function onButtonClick() {
+  alert('Button clicked');
+  const element = document.getElementById("grow");
+element.remove();
+};
 
 /*function makeGalaxy() {
 const Galaxy = yes{}
