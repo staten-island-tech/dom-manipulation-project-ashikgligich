@@ -28,26 +28,36 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 
   document.querySelector(".flex-container").insertAdjacentHTML(
     "afterbegin",
-    `<div class="grow">
-<div id="animation1">
-  <img
-    src="${DOMSelectors.cardPicture.value}"
-    alt="F44"
-  />
-  <h2>${DOMSelectors.cardTitle.value}</h2>
-  <h4>${DOMSelectors.cardData.value}</h4>
-  <h6>${DOMSelectors.firstName.value}</h6>
-  <button type="button">Delete</button>
-</div>
-</div>`
+    `<div class="grow" id="grow">
+      <div id="animation1">
+        <img
+          src="${DOMSelectors.cardPicture.value}"
+          alt="F44"
+        />
+        <h2>${DOMSelectors.cardTitle.value}</h2>
+        <h4>${DOMSelectors.cardData.value}</h4>
+        <h6>${DOMSelectors.firstName.value}</h6>
+        <button type="button" class="delete">Delete</button>
+      </div>
+    </div>`
   );
+
+  var button = document.querySelector('button.delete:not(button.delete[onclick=onButtonClick])');
+  var button = document.querySelector('button.delete:not([onclick=onButtonClick])');
+  button.addEventListener('click', onButtonClick);
+  
 });
-const button = document.querySelector('button');
+
+
+var button = document.querySelector('button.delete');
 button.addEventListener('click', onButtonClick);
+
 function onButtonClick() {
-  alert('Button clicked');
-  const element = document.getElementById("grow");
-element.remove();
+  console.log("button click");
+  
+  var granyElement = this.parentNode.parentNode;
+  //var element = document.getElementById("grow");
+  granyElement.remove();
 };
 
 /*function makeGalaxy() {
