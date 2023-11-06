@@ -37,6 +37,8 @@ body {
 }
 
 .grow {
+  align-content: center;
+  
   background-color: gray;
   display: flex;
   padding: 1vw 1vw 1vw 1vw;
